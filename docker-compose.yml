@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  nlp_processing:
+    build: ./nlp_processing
+    ports:
+      - "8000:8000"
+    networks:
+      - agent_net
+    env_file:
+      - ./nlp_processing/.env
+
+networks:
+  agent_net:
+    driver: bridge
