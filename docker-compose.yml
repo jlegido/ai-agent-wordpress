@@ -1,4 +1,3 @@
-version: "3.9"
 services:
   nlp_processing:
     build: ./nlp_processing
